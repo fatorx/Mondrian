@@ -15,7 +15,7 @@ abstract class ActionAdapter implements Action
     protected $currentNode = null;
     protected $context;
 
-    public function __construct(\PHPParser_NodeVisitor $ctx)
+    public function __construct(Context $ctx)
     {
         $this->context = $ctx;
     }
